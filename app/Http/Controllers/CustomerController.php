@@ -32,10 +32,5 @@ class CustomerController extends Controller
     }
 
 
-    public function show(){
-
-
-    }
-
 
 }
