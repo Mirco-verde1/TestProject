@@ -1,0 +1,47 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+@import 'reset';
+
+// START PROJECT TEST
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color:blue;
+  }
+
+.container{
+
+    .row{
+
+        .header{
+            width: 100%;
+            height: 80px;
+            border: 1px solid black;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+
+            .list-info-header{
+               width: 300px;
+               height: auto;
+                ul{
+                    li{
+                    display: inline;
+                      }
+                }
+
+            }
+        }
+
+
+    }
+}
