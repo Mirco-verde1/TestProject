@@ -23,3 +23,4 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 //customer form route
 
+Route::get('/prenotazione', 'CustomerController@index')->name('appointment');
