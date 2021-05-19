@@ -12,7 +12,7 @@ class SendNewMail extends Mailable
 {
     use Queueable, SerializesModels;
 
-
+    protected $customer = null;
     /**
      * Create a new message instance.
      *

@@ -10,19 +10,18 @@
 <body>
 
 
-  Richiesta ricevuta da : {{ $customer->name}}  {{ $customer->surname}}
+<h2>Richiesta ricevuta da : </h2> <h3> {{ $customer->name}}  {{ $customer->surname}} </h3>
 
-
- Contenuto messaggio:  {{ $customer->message}}
-
- contatti cliente:
-
- - Email : {{$customer->email}}
-
- - Telefono : {{$customer->phone}}
-
-
-
+<br>
+<h2>Contenuto messaggio: </h2> <h3>{{ $customer->message}}</h3>
+<br><br>
+<h2>Contatti cliente:</h2>
+<br><br>
+<h2>- Email : </h2><h3>{{$customer->email}}</h3>
+<br><br>
+<h2>- Telefono :</h2> <h3>{{$customer->phone}}</h3>
+<br><br>
+Ricontattare il cliente al più presto per concordare un appuntamento
 
 </body>
 </html>

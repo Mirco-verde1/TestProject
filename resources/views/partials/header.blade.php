@@ -4,13 +4,16 @@
      <div class="header">
          <div class="list-info-header">
             <ul>
+                <i class="fas fa-car-side"></i>
                 <li><a href=""> CHI SIAMO </a></li>
                 <li><a href=""> SERVIZI </a></li>
                 <li><a href=""> CONTATTI     </a></li>
                 <li><a href="{{route('appointment')}}"> PRENOTA APPUNTAMENTO</a></li>
             </ul>
+
          </div>
      </div>
 
    </div>
   </div>
+
