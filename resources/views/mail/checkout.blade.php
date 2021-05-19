@@ -9,8 +9,20 @@
 </head>
 <body>
 
-@include('partials.header')
-messagio inviato
+
+  Richiesta ricevuta da : {{ $customer->name}}  {{ $customer->surname}}
+
+
+ Contenuto messaggio:  {{ $customer->message}}
+
+ contatti cliente:
+
+ - Email : {{$customer->email}}
+
+ - Telefono : {{$customer->phone}}
+
+
+
 
 </body>
 </html>

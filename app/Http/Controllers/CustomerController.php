@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Customer;
 use App\Mail\SendNewMail;
 use Illuminate\Support\Facades\Mail;
+use Symfony\Component\VarDumper\VarDumper;
 
 class CustomerController extends Controller
 {
@@ -21,14 +22,19 @@ class CustomerController extends Controller
 
         $customerData = $request->all();
 
-        Mail::to('verderosamircowork@gmail.com')->send(new SendNewMail());
-
-        $newCustomer = new Customer;
-        $newCustomer->fill($customerData);
-        $newCustomer->save();
 
 
-        return view('mail.checkout');
+        $customer = new Customer;
+        $customer->fill($customerData);
+        $customer->save();
+        Mail::to('verderosamircowork@gmail.com')->send(new SendNewMail($customer));
+        return view('mail.result-email',compact('customer'));
+    }
+
+
+    public function show(){
+
+
     }
 
 
