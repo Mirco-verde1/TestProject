@@ -24,5 +24,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 //customer form route
 
 Route::get('/prenotazione', 'CustomerController@index')->name('appointment');
-Route::post('/conferma', 'CustomerController@store')->name('appointment.confirm');
+Route::post('prenotazione/conferma', 'CustomerController@store')->name('appointment.confirm');
 

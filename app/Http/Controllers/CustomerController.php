@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Customer;
+use App\Mail\SendNewMail;
+use Illuminate\Support\Facades\Mail;
 
 class CustomerController extends Controller
 {
@@ -19,11 +21,14 @@ class CustomerController extends Controller
 
         $customerData = $request->all();
 
+        Mail::to('verderosamircowork@gmail.com')->send(new SendNewMail());
+
         $newCustomer = new Customer;
         $newCustomer->fill($customerData);
         $newCustomer->save();
 
-        return view('checkout');
+
+        return view('mail.checkout');
     }
 
 
