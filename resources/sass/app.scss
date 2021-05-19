@@ -52,6 +52,10 @@
 
                     a{
                         text-decoration: none;
+                        color:$header-menu;
+                    }
+                    a:hover{
+                        color:$header-hover;
                     }
                       }
                 }

@@ -21,8 +21,14 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-//customer form route
-
+//Customer form routes
 Route::get('/prenotazione', 'CustomerController@index')->name('appointment');
 Route::post('prenotazione/conferma', 'CustomerController@store')->name('appointment.confirm');
+
+
+//Header routes
+
+Route::get('info','HeaderController@info')->name('about-us');
+Route::get('servizi','HeaderController@services')->name('services');
+Route::get('contatti','HeaderController@contact')->name('contact');
 

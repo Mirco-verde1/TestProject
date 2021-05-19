@@ -16144,7 +16144,7 @@ readers do not read off random characters that represent icons */
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background-color: #F0F0E7;
+  background-color: #f2f2f2;
 }
 .container-fluid .row .header .list-info-header, .container-sm .row .header .list-info-header, .container-md .row .header .list-info-header, .container-lg .row .header .list-info-header, .container-xl .row .header .list-info-header {
   width: auto;
@@ -16158,6 +16158,10 @@ readers do not read off random characters that represent icons */
 }
 .container-fluid .row .header .list-info-header ul li a, .container-sm .row .header .list-info-header ul li a, .container-md .row .header .list-info-header ul li a, .container-lg .row .header .list-info-header ul li a, .container-xl .row .header .list-info-header ul li a {
   text-decoration: none;
+  color: #8c8c8c;
+}
+.container-fluid .row .header .list-info-header ul li a:hover, .container-sm .row .header .list-info-header ul li a:hover, .container-md .row .header .list-info-header ul li a:hover, .container-lg .row .header .list-info-header ul li a:hover, .container-xl .row .header .list-info-header ul li a:hover {
+  color: #3d3d29;
 }
 
 .container-fluid .row .jumbo-background, .container-sm .row .jumbo-background, .container-md .row .jumbo-background, .container-lg .row .jumbo-background, .container-xl .row .jumbo-background {
