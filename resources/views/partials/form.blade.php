@@ -22,8 +22,9 @@
             <div class="myform form ">
 
         <!-- customer can send a message with its request-->
-               <form action="" method="post" >
-
+               <form action="{{route('appointment.confirm')}}" method="post" >
+                  @csrf
+                  @method('post')
                   <div class="form-group">
                     <label for="name"></label>
                      <input type="text" name="name"  class="form-control my-input" id="name" placeholder="Nome">
