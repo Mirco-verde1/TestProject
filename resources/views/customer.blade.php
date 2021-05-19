@@ -8,7 +8,9 @@
     <title>Contattaci</title>
 </head>
 <body>
+
 @include('partials.header')
-Qui andrà form di richiesta appuntamento
+@include('partials.form')
+
 </body>
 </html>

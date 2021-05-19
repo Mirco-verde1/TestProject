@@ -564,7 +564,7 @@ pre code {
 }
 @media (min-width: 1200px) {
   .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 100%;
+    max-width: 1140px;
   }
 }
 .row {
@@ -10006,21 +10006,90 @@ h3 {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: blue;
 }
 
-.container .row .header {
+.container-fluid .row .header, .container-sm .row .header, .container-md .row .header, .container-lg .row .header, .container-xl .row .header {
   width: 100%;
   height: 80px;
   border: 1px solid black;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  background-color: #F0F0E7;
 }
-.container .row .header .list-info-header {
+.container-fluid .row .header .list-info-header, .container-sm .row .header .list-info-header, .container-md .row .header .list-info-header, .container-lg .row .header .list-info-header, .container-xl .row .header .list-info-header {
   width: 300px;
   height: auto;
 }
-.container .row .header .list-info-header ul li {
+.container-fluid .row .header .list-info-header ul li, .container-sm .row .header .list-info-header ul li, .container-md .row .header .list-info-header ul li, .container-lg .row .header .list-info-header ul li, .container-xl .row .header .list-info-header ul li {
   display: inline;
+}
+
+.container-fluid .row .jumbo-background, .container-sm .row .jumbo-background, .container-md .row .jumbo-background, .container-lg .row .jumbo-background, .container-xl .row .jumbo-background {
+  width: 100%;
+  height: calc(100vh - 80px);
+  background-image: url("https://www.officinanaddeo.it/storage/2020/03/Sfondo-Header.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("https://media-eu.camilyo.software/media-eu/static/0283/736.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+#app .send-button {
+  background: #54C7C3;
+  width: 100%;
+  font-weight: 600;
+  color: #fff;
+  padding: 8px 25px;
+}
+#app .g-button {
+  color: #fff !important;
+  border: 1px solid #EA4335;
+  background: #ea4335 !important;
+  width: 100%;
+  font-weight: 600;
+  color: #fff;
+  padding: 8px 25px;
+}
+#app .my-input {
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  cursor: text;
+  padding: 8px 10px;
+  transition: border 0.1s linear;
+  margin-bottom: -20px;
+}
+#app .header-title {
+  margin-bottom: 20px;
+}
+#app h1 {
+  font-size: 31px;
+  line-height: 40px;
+  font-weight: 600;
+  color: #ebf1f5;
+}
+#app .sub-title {
+  color: #ebf1f5;
+  font-size: 30px;
+  line-height: 32px;
+  font-weight: 400;
+}
+#app .text-center {
+  padding-top: 20px;
+}
+@media screen and (max-width: 480px) {
+  #app h1 {
+    font-size: 26px;
+  }
+  #app h2 {
+    font-size: 20px;
+  }
 }

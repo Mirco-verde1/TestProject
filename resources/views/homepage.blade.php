@@ -12,9 +12,16 @@
 </head>
 <body>
 
-
-         <!-- header part -->
+    <!-- header part -->
      @include('partials.header')
 
+     <!-- Start jumbotron -->
+     <div class="container-fluid">
+         <div class="row">
+             <div class="jumbo-background">
+
+             </div>
+         </div>
+     </div>
 </body>
 </html>
