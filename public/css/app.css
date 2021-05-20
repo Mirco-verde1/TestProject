@@ -16140,7 +16140,6 @@ readers do not read off random characters that represent icons */
 .container-fluid .row .header, .container-sm .row .header, .container-md .row .header, .container-lg .row .header, .container-xl .row .header {
   width: 100%;
   height: 80px;
-  border: 1px solid black;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -16178,14 +16177,31 @@ readers do not read off random characters that represent icons */
   align-items: center;
 }
 .container-fluid .row .jumbo-background .card-container, .container-sm .row .jumbo-background .card-container, .container-md .row .jumbo-background .card-container, .container-lg .row .jumbo-background .card-container, .container-xl .row .jumbo-background .card-container {
-  width: 70%;
-  height: 350px;
+  width: 80%;
+  height: 450px;
   display: flex;
 }
 .container-fluid .row .jumbo-background .card-container .content-card, .container-sm .row .jumbo-background .card-container .content-card, .container-md .row .jumbo-background .card-container .content-card, .container-lg .row .jumbo-background .card-container .content-card, .container-xl .row .jumbo-background .card-container .content-card {
   width: calc(100% / 3);
   height: 100%;
   background-color: #f2f2f2;
+}
+.container-fluid .row .jumbo-background .card-container .content-card .card-image, .container-sm .row .jumbo-background .card-container .content-card .card-image, .container-md .row .jumbo-background .card-container .content-card .card-image, .container-lg .row .jumbo-background .card-container .content-card .card-image, .container-xl .row .jumbo-background .card-container .content-card .card-image {
+  width: 90%;
+  height: 50%;
+  margin: 0 auto;
+}
+.container-fluid .row .jumbo-background .card-container .content-card .card-image img, .container-sm .row .jumbo-background .card-container .content-card .card-image img, .container-md .row .jumbo-background .card-container .content-card .card-image img, .container-lg .row .jumbo-background .card-container .content-card .card-image img, .container-xl .row .jumbo-background .card-container .content-card .card-image img {
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+  transform: scale(1);
+  transition: transform 0.8s;
+}
+.container-fluid .row .jumbo-background .card-container .content-card .card-image img:hover, .container-sm .row .jumbo-background .card-container .content-card .card-image img:hover, .container-md .row .jumbo-background .card-container .content-card .card-image img:hover, .container-lg .row .jumbo-background .card-container .content-card .card-image img:hover, .container-xl .row .jumbo-background .card-container .content-card .card-image img:hover {
+  cursor: pointer;
+  box-shadow: 5px 5px 5px 0px rgba(192, 185, 185, 0.75);
+  transform: scale(1.1);
 }
 
 #app {

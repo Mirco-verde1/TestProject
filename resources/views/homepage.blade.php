@@ -24,14 +24,22 @@
                     <div class="card-container">
 
                         <div class="content-card">
+                          <div class="card-image">
+                              <img src="{{URL::asset('/images/mecc-radio24.jpg') }}" alt="">
+                          </div>
+                        </div>
+
+                        <div class="content-card">
+                            <div class="card-image">
+                                <img src="{{URL::asset('/images/autofficina.jpg') }}" alt="">
+                            </div>
 
                         </div>
 
                         <div class="content-card">
-
-                        </div>
-
-                        <div class="content-card">
+                            <div class="card-image">
+                                <img src="{{URL::asset('/images/cortesia.jpg') }}" alt="">
+                            </div>
 
                         </div>
 
