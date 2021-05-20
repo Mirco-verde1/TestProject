@@ -26,7 +26,7 @@
     <br><br>
 
     @if (count($customers) > 1)
-    Assicurati di aver preso visione di ogni alta richiesta da parte.
+    Assicurati di aver preso visione di ogni altra richiesta.
     @endif
 
 

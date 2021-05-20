@@ -16168,6 +16168,7 @@ readers do not read off random characters that represent icons */
   width: 100%;
   height: calc(100vh - 80px);
   background-image: url("https://www.officinanaddeo.it/storage/2020/03/Sfondo-Header.png");
+  opacity: 0.9;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -16177,14 +16178,13 @@ readers do not read off random characters that represent icons */
   align-items: center;
 }
 .container-fluid .row .jumbo-background .card-container, .container-sm .row .jumbo-background .card-container, .container-md .row .jumbo-background .card-container, .container-lg .row .jumbo-background .card-container, .container-xl .row .jumbo-background .card-container {
-  width: 78%;
-  height: 400px;
+  width: 70%;
+  height: 350px;
   display: flex;
 }
 .container-fluid .row .jumbo-background .card-container .content-card, .container-sm .row .jumbo-background .card-container .content-card, .container-md .row .jumbo-background .card-container .content-card, .container-lg .row .jumbo-background .card-container .content-card, .container-xl .row .jumbo-background .card-container .content-card {
   width: calc(100% / 3);
   height: 100%;
-  border: 1px solid yellow;
   background-color: #f2f2f2;
 }
 

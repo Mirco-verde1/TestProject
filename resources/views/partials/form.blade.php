@@ -22,32 +22,34 @@
             <div class="myform form ">
 
         <!-- customer can send a message with its request-->
-               <form action="{{route('appointment.confirm')}}" method="post" >
+
+               <form class="needs-validation" action="{{route('appointment.confirm')}}" method="post" novalidate>
                   @csrf
                   @method('post')
                   <div class="form-group">
                     <label for="name"></label>
-                     <input type="text" name="name"  class="form-control my-input" id="name" placeholder="Nome">
+                     <input type="text" name="name"  class="form-control {{ $errors->has('name') ? 'is-invalid' : ''}}" id="name" placeholder="Nome" required>
+
                   </div>
 
                   <div class="form-group">
                       <label for="surname"></label>
-                    <input type="text" name="surname"  class="form-control my-input" id="surname" placeholder="Cognome">
+                    <input type="text" name="surname"  class="form-control {{ $errors->has('surname') ? 'is-invalid' : ''}}" id="surname" placeholder="Cognome" required>
                  </div>
 
                   <div class="form-group">
                     <label for="email"></label>
-                     <input type="email" name="email"  class="form-control my-input" id="email" placeholder="Email">
+                     <input type="email" name="email"  class="form-control {{ $errors->has('email') ? 'is-invalid' : ''}}" id="email" placeholder="Email" required>
                   </div>
 
                   <div class="form-group">
                     <label for="phone"></label>
-                     <input type="text" name="phone" id="phone"  class="form-control my-input" placeholder="Telefono">
+                     <input type="text" name="phone" id="phone"  class="form-control {{ $errors->has('phone') ? 'is-invalid' : ''}}" placeholder="Telefono" required>
                   </div>
 
                   <div class="form-group">
                     <label for="message"></label>
-                    <textarea type="text" rows="8" name="message" id="message"  class="form-control my-input" placeholder="Messaggio"></textarea>
+                    <textarea type="text" rows="8" name="message" id="message"  class="form-control {{ $errors->has('message') ? 'is-invalid' : ''}}" placeholder="Messaggio" required></textarea>
                  </div>
 
                   <div class="text-center ">
