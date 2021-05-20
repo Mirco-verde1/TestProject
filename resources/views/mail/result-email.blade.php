@@ -9,7 +9,11 @@
 </head>
 <body>
     @include('partials.header')
-    Gentile cliente {{$customer->name}} {{$customer->surname}} la sua richiesta è stata inviata!
+    Gentile cliente {{$customer->name}} {{$customer->surname}} la sua richiesta
+     è stata inviata in data {{ \Carbon\Carbon::parse($customer->updated_at)->format('d/m/Y')}}!
+
+     Verrà ricontattato al più presto da un nostro tecnico per fissare un appuntamento!
+     Grazie per la fiducia, a presto!
 
 </body>
 </html>

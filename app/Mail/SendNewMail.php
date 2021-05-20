@@ -31,7 +31,8 @@ class SendNewMail extends Mailable
     public function build()
     {
         $customer = $this->customer;
+        $customers = Customer::all();
 
-        return $this->view('mail.checkout', compact('customer'));
+        return $this->view('mail.checkout', compact('customer', 'customers'));
     }
 }

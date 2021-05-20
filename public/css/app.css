@@ -16177,14 +16177,15 @@ readers do not read off random characters that represent icons */
   align-items: center;
 }
 .container-fluid .row .jumbo-background .card-container, .container-sm .row .jumbo-background .card-container, .container-md .row .jumbo-background .card-container, .container-lg .row .jumbo-background .card-container, .container-xl .row .jumbo-background .card-container {
-  width: 100%;
-  height: 500px;
+  width: 78%;
+  height: 400px;
   display: flex;
 }
 .container-fluid .row .jumbo-background .card-container .content-card, .container-sm .row .jumbo-background .card-container .content-card, .container-md .row .jumbo-background .card-container .content-card, .container-lg .row .jumbo-background .card-container .content-card, .container-xl .row .jumbo-background .card-container .content-card {
   width: calc(100% / 3);
   height: 100%;
   border: 1px solid yellow;
+  background-color: #f2f2f2;
 }
 
 #app {
