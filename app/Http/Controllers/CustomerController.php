@@ -9,7 +9,9 @@ use Illuminate\Support\Facades\Mail;
 use Symfony\Component\VarDumper\VarDumper;
 
 class CustomerController extends Controller
+
 {
+
     public function index(){
 
        return view('customer');

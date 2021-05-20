@@ -47,7 +47,7 @@
 
                     <div class="form-group">
                         <label for="message"></label>
-                        <textarea type="text" rows="8" name="message" id="message"  class="form-control my-input {{ $errors->has('message') ? 'is-invalid' : ''}}" placeholder="Messaggio" required></textarea>
+                        <textarea type="text" rows="6" name="message" id="message"  class="form-control my-input {{ $errors->has('message') ? 'is-invalid' : ''}}" placeholder="Messaggio" required></textarea>
                     </div>
 
                     <div class="text-center ">
