@@ -24,22 +24,61 @@
                     <div class="card-container">
 
                         <div class="content-card">
-                          <div class="card-image">
-                              <img src="{{URL::asset('/images/mecc-radio24.jpg') }}" alt="">
+                            <div class="slide-bottom">
+                                <div class="card-image">
+                                    <img src="{{URL::asset('/images/meccatronico.jpg') }}" alt="">
+                                </div>
+                            </div>
+
+
+                            <!--bottom part of card-->
+                          <div class="card-bottom">
+                              <div class="card-description">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat commodi repudiandae enim corrupti ad esse aspernatur nesciunt rem cumque necessitatibus. . .</p>
+                              </div>
+                            <div class="card-button">
+                               <a href="{{route('about-us')}}"><button type="button" class="btn btn-secondary">Chi siamo</button></a>
+                              </div>
                           </div>
                         </div>
 
                         <div class="content-card">
-                            <div class="card-image">
-                                <img src="{{URL::asset('/images/autofficina.jpg') }}" alt="">
+                            <div class="slide-bottom">
+                                <div class="card-image">
+                                    <img src="{{URL::asset('/images/autofficina.jpg') }}" alt="">
+                                </div>
                             </div>
 
+
+                            <!--bottom part of card-->
+                          <div class="card-bottom">
+                              <div class="card-description">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat commodi repudiandae enim corrupti ad esse aspernatur nesciunt rem cumque necessitatibus. . .</p>
+                              </div>
+                            <div class="card-button">
+                               <a href="{{route('about-us')}}"><button type="button" class="btn btn-secondary">Chi siamo</button></a>
+                              </div>
+                          </div>
                         </div>
 
+
                         <div class="content-card">
-                            <div class="card-image">
-                                <img src="{{URL::asset('/images/cortesia.jpg') }}" alt="">
+                            <div class="slide-bottom">
+                                <div class="card-image">
+                                    <img src="{{URL::asset('/images/cortesia.jpg') }}" alt="">
+                                </div>
                             </div>
+
+
+                           <!--bottom part of card-->
+                          <div class="card-bottom">
+                            <div class="card-description">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat commodi repudiandae enim corrupti ad esse aspernatur nesciunt rem cumque necessitatibus. . .</p>
+                             </div>
+                            <div class="card-button">
+                              <a href="{{route('appointment')}}"> <button type="button" class="btn btn-secondary">Prenota</button> </a>
+                              </div>
+                          </div>
 
                         </div>
 
