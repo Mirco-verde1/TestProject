@@ -194,7 +194,7 @@
 
 
     // FORM CUSTOMER PART
-    #app{
+    #start{
     width: 100vw;
     height: 100vh;
     background-image: url('https://media-eu.camilyo.software/media-eu/static/0283/736.jpg');
@@ -255,3 +255,38 @@
         }
         }
     }
+
+    //RESULTS EMAIL PART
+#app{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('https://www.vendereinofficina.com/wp-content/uploads/2020/05/Fotolia_95239309_Subscription_Monthly_M-1500x1000.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    .container-fluid{
+
+        .row{
+
+          .customer-message{
+              width: 50%;
+              height: 200px;
+              background-color: rgb(189, 192, 183);
+
+              h3{
+                font-size: 30px;
+                color: rgb(236, 236, 231);
+              }
+
+              .past-customers{
+
+              }
+
+          }
+
+        }
+    }
+
+}
+

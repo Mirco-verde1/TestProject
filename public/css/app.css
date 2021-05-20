@@ -16248,7 +16248,7 @@ readers do not read off random characters that represent icons */
   margin: 10px auto;
 }
 
-#app {
+#start {
   width: 100vw;
   height: 100vh;
   background-image: url("https://media-eu.camilyo.software/media-eu/static/0283/736.jpg");
@@ -16257,14 +16257,14 @@ readers do not read off random characters that represent icons */
   background-position: center center;
   background-attachment: fixed;
 }
-#app .send-button {
+#start .send-button {
   background: #54C7C3;
   width: 100%;
   font-weight: 600;
   color: #fff;
   padding: 8px 25px;
 }
-#app .g-button {
+#start .g-button {
   color: #fff !important;
   border: 1px solid #EA4335;
   background: #ea4335 !important;
@@ -16273,36 +16273,55 @@ readers do not read off random characters that represent icons */
   color: #fff;
   padding: 8px 25px;
 }
-#app .my-input {
+#start .my-input {
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
   cursor: text;
   padding: 8px 10px;
   transition: border 0.1s linear;
   margin-bottom: -20px;
 }
-#app .header-title {
+#start .header-title {
   margin-bottom: 20px;
 }
-#app h1 {
+#start h1 {
   font-size: 31px;
   line-height: 40px;
   font-weight: 600;
   color: #ebf1f5;
 }
-#app .sub-title {
+#start .sub-title {
   color: #ebf1f5;
   font-size: 30px;
   line-height: 32px;
   font-weight: 400;
 }
-#app .text-center {
+#start .text-center {
   padding-top: 20px;
 }
 @media screen and (max-width: 480px) {
-  #app h1 {
+  #start h1 {
     font-size: 26px;
   }
-  #app h2 {
+  #start h2 {
     font-size: 20px;
   }
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("https://www.vendereinofficina.com/wp-content/uploads/2020/05/Fotolia_95239309_Subscription_Monthly_M-1500x1000.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+}
+#app .container-fluid .row .customer-message, #app .container-sm .row .customer-message, #app .container-md .row .customer-message, #app .container-lg .row .customer-message, #app .container-xl .row .customer-message {
+  width: 50%;
+  height: 200px;
+  background-color: #bdc0b7;
+}
+#app .container-fluid .row .customer-message h3, #app .container-sm .row .customer-message h3, #app .container-md .row .customer-message h3, #app .container-lg .row .customer-message h3, #app .container-xl .row .customer-message h3 {
+  font-size: 30px;
+  color: #ecece7;
 }

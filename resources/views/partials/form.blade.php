@@ -3,7 +3,7 @@
     <!------ Include the above in your HEAD tag ---------->
     <body>
 
-    <div id="app">
+    <div id="start">
     <div class="container">
         <div class="col-md-6 mx-auto text-center">
             <div class="header-title">
@@ -47,12 +47,24 @@
 
                     <div class="form-group">
                         <label for="message"></label>
-                        <textarea type="text" rows="6" name="message" id="message"  class="form-control my-input {{ $errors->has('message') ? 'is-invalid' : ''}}" placeholder="Messaggio" required></textarea>
+                        <textarea type="text" rows="2" name="message" id="message"  class="form-control my-input {{ $errors->has('message') ? 'is-invalid' : ''}}" placeholder="Messaggio" required></textarea>
                     </div>
 
                     <div class="text-center ">
                         <button type="submit" class=" btn btn-block send-button tx-tfm">Invia la tua richiesta</button>
                     </div>
+
+                    <!--errors messages form-->
+                    @if ($errors->any())
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div><br />
+                      @endif
+
 
 
                 </form>
