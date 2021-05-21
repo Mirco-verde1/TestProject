@@ -195,7 +195,6 @@ figure {
 img {
   vertical-align: middle;
   border-style: none;
-  width: 80px;
 }
 
 svg {
@@ -16346,4 +16345,36 @@ readers do not read off random characters that represent icons */
 }
 #app .past-customers .component-part {
   background-color: #f2f2f2;
+}
+
+.container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
+  background-color: black;
+}
+.container-fluid .row .content-about-us, .container-sm .row .content-about-us, .container-md .row .content-about-us, .container-lg .row .content-about-us, .container-xl .row .content-about-us {
+  width: 80%;
+  height: 100vh;
+  margin: 0 auto;
+  background-image: url("https://www.progettandopc.com/wp-content/uploads/2020/05/about.jpg");
+  opacity: 0.9;
+}
+
+.container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
+  background-color: black;
+}
+.container-fluid .row .content-services, .container-sm .row .content-services, .container-md .row .content-services, .container-lg .row .content-services, .container-xl .row .content-services {
+  width: 80%;
+  height: 100vh;
+  margin: 0 auto;
+  background-image: url("https://www.noleggiofurgoniverona.com/wp-content/uploads/2020/03/elettrauto-02.jpg");
+}
+
+.container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
+  background-color: black;
+}
+.container-fluid .row .content-contact, .container-sm .row .content-contact, .container-md .row .content-contact, .container-lg .row .content-contact, .container-xl .row .content-contact {
+  opacity: 0.9;
+  width: 80%;
+  height: 100vh;
+  margin: 0 auto;
+  background-image: url("https://www.filarmonicacampana.it/wp-content/uploads/2014/02/Contatti_imagefullwide.jpg");
 }

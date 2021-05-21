@@ -9,6 +9,18 @@
 </head>
 <body>
     @include('partials.header')
-    services
+
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <div class="content-services">
+
+
+            </div>
+
+        </div>
+
+    </div>
 </body>
 </html>

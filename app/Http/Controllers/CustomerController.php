@@ -36,6 +36,7 @@ class CustomerController extends Controller
         $customer->fill($customerData);
         $customer->save();
         Mail::to('verderosamircowork@gmail.com')->send(new SendNewMail($customer));
+
         return view('mail.result-email',compact('customer'));
     }
 

@@ -315,5 +315,48 @@
 }
 
 
-//START CHI SIAMO VIEW STYLE
+//START ABOUT US VIEW STYLE
+.container-fluid{
+background-color: black;
+    .row{
 
+      .content-about-us{
+          width: 80%;
+          height: 100vh;
+          margin: 0 auto;
+          background-image: url('https://www.progettandopc.com/wp-content/uploads/2020/05/about.jpg');
+          opacity: 0.9;
+      }
+    }
+}
+
+//START SERVICES VIEW STYLE
+.container-fluid{
+background-color: black;
+    .row{
+
+      .content-services{
+          width: 80%;
+          height: 100vh;
+          margin: 0 auto;
+          background-image: url('https://www.noleggiofurgoniverona.com/wp-content/uploads/2020/03/elettrauto-02.jpg');
+      }
+    }
+}
+
+
+
+//START CONTACT VIEW STYLE
+.container-fluid{
+    background-color: black;
+        .row{
+
+          .content-contact{
+              opacity: 0.9;
+              width: 80%;
+              height: 100vh;
+              margin: 0 auto;
+              background-image: url('https://www.filarmonicacampana.it/wp-content/uploads/2014/02/Contatti_imagefullwide.jpg');
+          }
+        }
+    }

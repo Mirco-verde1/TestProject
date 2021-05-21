@@ -9,6 +9,17 @@
 </head>
 <body>
     @include('partials.header')
-    about us
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <div class="content-about-us">
+
+
+            </div>
+
+        </div>
+
+    </div>
 </body>
 </html>

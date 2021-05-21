@@ -9,6 +9,18 @@
 </head>
 <body>
     @include('partials.header')
-    contact
+
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <div class="content-contact">
+
+
+            </div>
+
+        </div>
+
+    </div>
 </body>
 </html>
