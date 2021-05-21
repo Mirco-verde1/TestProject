@@ -195,6 +195,7 @@ figure {
 img {
   vertical-align: middle;
   border-style: none;
+  width: 80px;
 }
 
 svg {
@@ -16178,7 +16179,7 @@ readers do not read off random characters that represent icons */
 }
 .container-fluid .row .jumbo-background .card-container, .container-sm .row .jumbo-background .card-container, .container-md .row .jumbo-background .card-container, .container-lg .row .jumbo-background .card-container, .container-xl .row .jumbo-background .card-container {
   width: 82%;
-  height: 500px;
+  height: 560px;
   display: flex;
   border-radius: 1px;
   background-color: #f2f2f2;
@@ -16318,10 +16319,31 @@ readers do not read off random characters that represent icons */
 }
 #app .container-fluid .row .customer-message, #app .container-sm .row .customer-message, #app .container-md .row .customer-message, #app .container-lg .row .customer-message, #app .container-xl .row .customer-message {
   width: 50%;
-  height: 200px;
+  height: 582px;
   background-color: #bdc0b7;
+  opacity: 0.8;
+  font-style: italic;
 }
 #app .container-fluid .row .customer-message h3, #app .container-sm .row .customer-message h3, #app .container-md .row .customer-message h3, #app .container-lg .row .customer-message h3, #app .container-xl .row .customer-message h3 {
   font-size: 30px;
-  color: #ecece7;
+  color: #171111;
+}
+#app .past-customers {
+  width: 100%;
+  height: 500px;
+  overflow-y: auto;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#app .past-customers .title-under-background {
+  font-size: 46px;
+  background-color: #ececec;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+}
+#app .past-customers .component-part {
+  background-color: #f2f2f2;
 }

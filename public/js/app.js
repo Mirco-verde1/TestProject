@@ -1872,6 +1872,26 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -37463,7 +37483,39 @@ var render = function() {
                     "div",
                     _vm._l(info, function(item, i) {
                       return _c("div", { key: i }, [
-                        _c("h1", [_vm._v(_vm._s(item.name))])
+                        _c("table", { staticClass: "table table-sm" }, [
+                          _vm._m(0, true),
+                          _vm._v(" "),
+                          _c("tbody", [
+                            _c("tr", [
+                              _c("th", { attrs: { scope: "row" } }),
+                              _vm._v(" "),
+                              _c(
+                                "i",
+                                {
+                                  staticClass: "image",
+                                  staticStyle: { width: "80px" }
+                                },
+                                [
+                                  _c("img", {
+                                    attrs: {
+                                      src: "../../images/profilo.png",
+                                      alt: ""
+                                    }
+                                  })
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c("td", [_c("h2", [_vm._v(_vm._s(item.name))])]),
+                              _vm._v(" "),
+                              _c("td", [
+                                _c("h2", [_vm._v(_vm._s(item.surname))])
+                              ]),
+                              _vm._v(" "),
+                              _c("td")
+                            ])
+                          ])
+                        ])
                       ])
                     }),
                     0
@@ -37477,7 +37529,14 @@ var render = function() {
     ])
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("thead", [_c("tr", [_c("th", { attrs: { scope: "col" } })])])
+  }
+]
 render._withStripped = true
 
 

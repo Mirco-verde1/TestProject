@@ -56,7 +56,7 @@
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat commodi repudiandae enim corrupti ad esse aspernatur nesciunt rem cumque necessitatibus. . .</p>
                               </div>
                             <div class="card-button">
-                               <a href="{{route('about-us')}}"><button type="button" class="btn btn-secondary">Chi siamo</button></a>
+                               <a href="{{route('services')}}"><button type="button" class="btn btn-secondary">Servizi</button></a>
                               </div>
                           </div>
                         </div>
