@@ -9,7 +9,7 @@
 </head>
 <body>
     @include('partials.header')
-    <div class="container-fluid">
+    <div class="container-fluid-header">
 
         <div class="row">
 

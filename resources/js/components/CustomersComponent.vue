@@ -19,9 +19,9 @@
                                         <tbody>
                                             <tr>
                                             <th scope="row"></th>
-                                           <i class="image" style="width:80px"><img :src="`../../images/profilo.png`" alt=""></i>
-                                            <td><h2>{{item.name}}</h2></td>
-                                            <td><h2>{{item.surname}}</h2></td>
+                                           <img style="width:80px" :src="`../../images/profilo.png`" alt="profile image">
+                                            <td><h2 style="text-align:left, padding-left:22px">{{item.name}}</h2></td>
+                                            <td><h2 style="text-align:left">{{item.surname}}</h2></td>
                                             <td></td>
                                             </tr>
 

@@ -37490,26 +37490,32 @@ var render = function() {
                             _c("tr", [
                               _c("th", { attrs: { scope: "row" } }),
                               _vm._v(" "),
-                              _c(
-                                "i",
-                                {
-                                  staticClass: "image",
-                                  staticStyle: { width: "80px" }
-                                },
-                                [
-                                  _c("img", {
-                                    attrs: {
-                                      src: "../../images/profilo.png",
-                                      alt: ""
-                                    }
-                                  })
-                                ]
-                              ),
-                              _vm._v(" "),
-                              _c("td", [_c("h2", [_vm._v(_vm._s(item.name))])]),
+                              _c("img", {
+                                staticStyle: { width: "80px" },
+                                attrs: {
+                                  src: "../../images/profilo.png",
+                                  alt: "profile image"
+                                }
+                              }),
                               _vm._v(" "),
                               _c("td", [
-                                _c("h2", [_vm._v(_vm._s(item.surname))])
+                                _c(
+                                  "h2",
+                                  {
+                                    staticStyle: {
+                                      "text-align": "left, padding-left:22px"
+                                    }
+                                  },
+                                  [_vm._v(_vm._s(item.name))]
+                                )
+                              ]),
+                              _vm._v(" "),
+                              _c("td", [
+                                _c(
+                                  "h2",
+                                  { staticStyle: { "text-align": "left" } },
+                                  [_vm._v(_vm._s(item.surname))]
+                                )
                               ]),
                               _vm._v(" "),
                               _c("td")

@@ -302,6 +302,8 @@
             text-align: center;
             padding: 20px;
             width: 100%;
+            height: 80px;
+            margin-bottom: 20px;;
         }
 
         .component-part{
@@ -316,7 +318,7 @@
 
 
 //START ABOUT US VIEW STYLE
-.container-fluid{
+.container-fluid-header{
 background-color: black;
     .row{
 
@@ -331,7 +333,7 @@ background-color: black;
 }
 
 //START SERVICES VIEW STYLE
-.container-fluid{
+.container-fluid-header{
 background-color: black;
     .row{
 
@@ -347,7 +349,7 @@ background-color: black;
 
 
 //START CONTACT VIEW STYLE
-.container-fluid{
+.container-fluid-header{
     background-color: black;
         .row{
 
