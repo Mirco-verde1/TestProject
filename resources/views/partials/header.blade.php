@@ -8,7 +8,11 @@
                 <li><a href="{{route('about-us')}}"> CHI SIAMO </a></li>
                 <li><a href="{{route('services')}}"> SERVIZI </a></li>
                 <li><a href="{{route('contact')}}"> CONTATTI  </a></li>
+                @can('list', 'App\Auth\User')
                 <li><a href="{{route('appointment')}}"> PRENOTA APPUNTAMENTO</a></li>
+
+                @endcan
+
             </ul>
 
          </div>

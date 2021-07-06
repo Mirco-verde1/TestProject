@@ -2,7 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\User;
 use Illuminate\Http\Request;
+use Symfony\Component\Finder\Exception\AccessDeniedException;
+use Illuminate\Auth\Access\AuthorizationException as AccessAuthorizationException;
+use Illuminate\Support\Facades\Log;
+
+
 
 class HomeController extends Controller
 {
@@ -23,6 +29,12 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        try {
+            $this->authorize('list',User::class);
+            return view('customer');
+         } catch (AccessAuthorizationException $e) {
+             Log::channel('admin_gui')->info($e->getMessage());
+             return abort(403,trans('errors.denied'));
+         }
     }
 }

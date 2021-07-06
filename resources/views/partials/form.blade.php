@@ -24,18 +24,18 @@
                 <form class="needs-validation" action="{{route('appointment.confirm')}}" method="post" novalidate>
                     @csrf
                     @method('post')
-                    <div class="form-group">
+                    <div class="form-group required">
                         <label for="name"></label>
                         <input type="text" name="name"  class="form-control my-input {{ $errors->has('name') ? 'is-invalid' : ''}}" id="name" placeholder="Nome" required>
 
                     </div>
 
-                    <div class="form-group">
+                    <div class="form-group required">
                         <label for="surname"></label>
                         <input type="text" name="surname"  class="form-control my-input  {{ $errors->has('surname') ? 'is-invalid' : ''}}" id="surname" placeholder="Cognome" required>
                     </div>
 
-                    <div class="form-group">
+                    <div class="form-group required">
                         <label for="email"></label>
                         <input type="email" name="email"  class="form-control my-input {{ $errors->has('email') ? 'is-invalid' : ''}}" id="email" placeholder="Email" required>
                     </div>
