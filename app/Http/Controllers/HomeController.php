@@ -29,12 +29,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        try {
-            $this->authorize('list',User::class);
-            return view('customer');
-         } catch (AccessAuthorizationException $e) {
-             Log::channel('admin_gui')->info($e->getMessage());
-             return abort(403,trans('errors.denied'));
-         }
+            return view('home');
+
     }
 }
