@@ -49,7 +49,7 @@ class CustomerController extends Controller
         $customer->fill($customerData);
         $customer->save();
         Mail::to('verderosamircowork@gmail.com')->send(new SendNewMail($customer));
-
+        session()->flash('success', 'Richiesta inviata correttamente');
         return view('mail.result-email',compact('customer'));
     }
 

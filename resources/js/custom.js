@@ -1,5 +1,14 @@
   $(document).ready(function(){
-    $('button').click(function () {
-        $('.card-description').html('aooooo')
+    $('button').mouseover(function () {
+        $(this).addClass('red')
+
+
+
+      });
+      $('button').mouseleave(function () {
+        $(this).delay(500).removeClass('red')
+
+
+
       });
   });

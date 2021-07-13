@@ -290,6 +290,16 @@ background-attachment: fixed;
       }
 
     }
+
+//success flash message
+.success-message{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background: blue;
+    color: white;
+}
+
 }
 
 .past-customers{
@@ -366,4 +376,12 @@ background-color: black;
           background-image: url('https://www.filarmonicacampana.it/wp-content/uploads/2014/02/Contatti_imagefullwide.jpg');
       }
     }
+}
+
+
+// JQuery Class Styles
+
+.red{
+padding: 8px;
+
 }

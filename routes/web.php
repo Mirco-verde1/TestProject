@@ -36,3 +36,8 @@ Route::get('contatti','HeaderController@contact')->name('contact');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+//TEST EMAIL JOBS
+
+Route::get('test-email', 'JobController@processQueue');

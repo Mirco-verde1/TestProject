@@ -31,6 +31,15 @@
 
 
                     </div>
+                     <!-- Flash success message -->
+                 @if (session()->has('success'))
+
+                 <div  class="success-message">
+                     <p>{{session('success')}}</p>
+
+                 </div>
+
+                 @endif
                 </div>
 
 
@@ -45,6 +54,8 @@
                         <customers-component></customers-component>
                     </div>
                 </div>
+
+
 
             </div>
         <script src="{{asset('js/app.js')}}"></script>
