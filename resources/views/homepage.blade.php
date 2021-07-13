@@ -8,6 +8,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Autofficina</title>
         <link rel="stylesheet" href="{{asset('css/app.css')}}">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.3.0/alpine-ie11.min.js"></script>
 
     </head>
     <body>

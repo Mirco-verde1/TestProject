@@ -5,6 +5,7 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <meta http-equiv="X-UA-Compatible" content="ie=edge">
             <link rel="stylesheet" href="{{asset('css/app.css')}}">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.3.0/alpine-ie11.min.js"></script>
             <title>RICHIESTA APPUNTAMENTO</title>
         </head>
         <body>
@@ -34,8 +35,12 @@
                      <!-- Flash success message -->
                  @if (session()->has('success'))
 
-                 <div  class="success-message">
-                     <p>{{session('success')}}</p>
+                 <div
+                      x-data = {show:true}
+                      x-init="setTimeout( () => show = false, 4000)"
+                      x-show="show"
+                      class="success-message">
+                      <p>{{session('success')}}</p>
 
                  </div>
 
