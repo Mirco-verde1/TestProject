@@ -9,8 +9,11 @@ use Illuminate\Auth\Access\AuthorizationException as AccessAuthorizationExceptio
 use Illuminate\Support\Facades\Mail;
 use Symfony\Component\VarDumper\VarDumper;
 use Illuminate\Contracts\Auth\Access\AuthorizationException;
+use Illuminate\Filesystem\Cache;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Cache as FacadesCache;
 
 
 class CustomerController extends Controller
@@ -22,7 +25,13 @@ class CustomerController extends Controller
 
         try {
            $this->authorize('list',Customer::class);
-           return view('customer');
+           $users = cache()->remember('key', 60*60*24, function () {
+             return Auth::user();
+           });
+           $customer = cache()->remember('keyyyy', 60*60*24, function () {
+            return Customer::all();
+          });
+           return view('customer',compact('users','customer'));
         } catch (AccessAuthorizationException $e) {
             Log::channel('admin_gui')->info($e->getMessage());
             return abort(403,trans('errors.denied'));

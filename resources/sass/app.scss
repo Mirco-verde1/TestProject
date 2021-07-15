@@ -294,10 +294,13 @@ background-attachment: fixed;
 //success flash message
 .success-message{
     position: fixed;
-    bottom: 0;
-    right: 0;
-    background: blue;
-    color: white;
+    bottom: 78%;
+    right: 34px;
+    background: rgb(108, 108, 165);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
 }
 
 }

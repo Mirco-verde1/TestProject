@@ -18930,10 +18930,13 @@ readers do not read off random characters that represent icons */
 #app .container-lg .success-message,
 #app .container-xl .success-message {
   position: fixed;
-  bottom: 0;
-  right: 0;
-  background: blue;
+  bottom: 78%;
+  right: 34px;
+  background: #6c6ca5;
   color: white;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 15px;
 }
 
 #app .past-customers {
