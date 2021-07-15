@@ -5,11 +5,13 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Customer;
 use App\Mail\SendNewMail;
+use App\Notifications\UserRegistered;
 use Illuminate\Auth\Access\AuthorizationException as AccessAuthorizationException;
 use Illuminate\Support\Facades\Mail;
 use Symfony\Component\VarDumper\VarDumper;
 use Illuminate\Contracts\Auth\Access\AuthorizationException;
 use Illuminate\Filesystem\Cache;
+use Illuminate\Notifications\Notification;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Auth;
@@ -59,6 +61,7 @@ class CustomerController extends Controller
         $customer->save();
         Mail::to('verderosamircowork@gmail.com')->send(new SendNewMail($customer));
         session()->flash('success', 'Richiesta inviata correttamente');
+        $customer->notify(new UserRegistered());
         return view('mail.result-email',compact('customer'));
     }
 
