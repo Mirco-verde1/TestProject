@@ -61,7 +61,7 @@ class CustomerController extends Controller
         $customer->save();
         Mail::to('verderosamircowork@gmail.com')->send(new SendNewMail($customer));
         session()->flash('success', 'Richiesta inviata correttamente');
-        $customer->notify(new UserRegistered());
+        $customer->notify(new UserRegistered($customer));
         return view('mail.result-email',compact('customer'));
     }
 

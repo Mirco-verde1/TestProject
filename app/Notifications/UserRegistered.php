@@ -6,19 +6,20 @@ use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
+use App\Customer;
 
 class UserRegistered extends Notification
 {
     use Queueable;
-
+    private $customer;
     /**
      * Create a new notification instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct(Customer $customer)
     {
-        //
+        $this->customer = $customer;
     }
 
     /**
@@ -42,8 +43,8 @@ class UserRegistered extends Notification
     {
         return (new MailMessage)
                     ->line('The introduction to the notification.')
-                    ->action('Notification Action', url('/'))
-                    ->line('Thank you for using our application!');
+                    ->action('Back to App!', url('/'))
+                    ->line("Thank {$this->customer->name} you for using our application!");
     }
 
     /**
